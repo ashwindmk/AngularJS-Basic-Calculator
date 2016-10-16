@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="js/angular.min.js" ></script>
+    <style>
+        body {
+            margin: auto;
+            padding: 2em 2em 2em 2em
+        }
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Basic Calculator</p>
+
+    <table style="width: 90%">
+        <tr>
+            <td>Addition</td>
+            <td> <input type="number" placeholder="Number 1" ng-model="add1"/> </td>
+            <td> <input type="number" placeholder="Number 2" ng-model="add2"/> </td>
+            <td> <p>Sum: {{add1+add2}}</p> </td>
+        </tr>
+
+        <tr>
+            <td>Subtraction</td>
+            <td> <input type="number" placeholder="Number 1" ng-model="sub1"/> </td>
+            <td> <input type="number" placeholder="Number 2" ng-model="sub2"/> </td>
+            <td> <p>Difference: {{sub1-sub2}}</p> </td>
+        </tr>
+
+        <tr>
+            <td>Multiplication</td>
+            <td> <input type="number" placeholder="Number 1" ng-model="mul1"/> </td>
+            <td> <input type="number" placeholder="Number 2" ng-model="mul2"/> </td>
+            <td> <p>Product: {{mul1*mul2}}</p> </td>
+        </tr>
+
+        <tr>
+            <td>Division</td>
+            <td> <input type="number" placeholder="Number 1" ng-model="div1"/> </td>
+            <td> <input type="number" placeholder="Number 2" ng-model="div2"/> </td>
+            <td> <p>Quotient: {{div1/div2}}</p> </td>
+        </tr>
+
+
+    </table>
+
+</body>
+</html>
